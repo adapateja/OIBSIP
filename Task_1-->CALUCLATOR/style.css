@@ -1,1 +1,67 @@
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvA7MMxDxl-wWIHqC7xI-eFEDFvfdiWSO4WQ&usqp=CAU);
+    background-size: cover;
+}
+.calc{
+    border: 2px solid balck;
+    background-color: black;
+    width: 337px;
+    height: 410px;
+    padding: 10px;
+    margin-left: 600px;
+    margin-top: 200px;
+    border-radius: 10px;
+    filter: drop-shadow(20px 20px 20px black);   /* left */
 
+}
+.num{
+    background-color:dimgray;
+    border: 2px solid dimgray;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    margin-top: 10px;
+    filter: drop-shadow(5px 5px 5px  #aaaaaa);
+    font-size: 30px;
+}
+.opp{
+    background-color: lightgrey;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    margin-top: 10px;
+    filter: drop-shadow(5px 5px 5px  #aaaaaa);
+    font-size: 30px;
+}
+ .set1 .set2 .set3 .set4{
+    display: flex;
+    gap: 20px;
+}
+input
+{
+    text-align: center;
+    cursor: pointer;
+}
+input[type=text]{
+    width: 330px;
+    height: 40px;
+    background-color:black ;
+    color: aliceblue;
+    border: 0px;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.num:hover{
+    background-color:#C3073F;
+}
+.num:active{
+    background-color: #a09e9e;
+    color:black;
+}
+.opp:hover{
+    background-color: #ffeecb;
+    color:black;
+}
