@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    height: 10vh;
+    background: linear-gradient(to right, #3e6d78, #b3d7e3);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+.main-container{
+    height: 90vh;
+    background: radial-gradient(#fff, #b3d7e3);
+    display: grid;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+.image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tasks{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links h1{
+    font-size: 50px;
+    color: #220726;
+}
+li{
+    background-color: #b3d7e3;
+    list-style: none;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+li:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+li a, li a i{
+    text-decoration: none;
+    color:#3e6d78;
+    padding: 0 15px;
+    transition: 0.5s;
+}
+li a:hover, li a:hover > i{
+    color: #220726;
+}
+li a i:hover{
+    color: #220726;
+}
+.image img {
+    position: relative;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    height: 500px;
+    filter: drop-shadow(15px 15px 15px rgba(0,0,0,0.4));
+}
+#copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #220726;
+}
+#copy a{
+    text-decoration: none;
+    color: #3e6d78;
+    transition: 0.5s;
+    font-size: 20px;
+}
+#copy a:hover{
+    color: #220726;
+}
+@keyframes move {
+    from { top: 0px; }
+    to { top: 10px; }
+}
